@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Surfers Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg">
+    <div class="intro-message" id="intro">
+        <div class="intro-text">
+            <div class="intro-text-small">Made by</div>
+            <div class="intro-text-large" id="introName">Pandiselvam</div>
+        </div>
+        <div class="loading-bar-container">
+            <div class="loading-bar" id="loadingBar"></div>
+        </div>
+    </div>
+    <audio id="backgroundMusic" src="Nee-Naan.mp3" loop></audio>
+
+    <div class="game-container hidden">
+        <canvas id="gameCanvas"></canvas>
+        <div id="score">Score: 0</div>
+        <div id="gameOver" class="hidden">Game Over! Your score: <span id="finalScore"></span></div>
+        <button id="restartButton" class="hidden">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
